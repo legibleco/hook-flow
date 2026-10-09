@@ -1,0 +1,15 @@
+{
+  "name": "legible",
+  "description": "Example Claude Code plugins from Legible",
+  "owner": {
+    "name": "Legible",
+    "url": "https://legible.co"
+  },
+  "plugins": [
+    {
+      "name": "hook-flow",
+      "source": "./",
+      "description": "Watch Claude Code's agent loop as it runs: hook events, a flow chart, a span timeline, tokens and dollars"
+    }
+  ]
+}

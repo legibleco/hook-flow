@@ -1,0 +1,5 @@
+# Written by Claude Code when it loads the plugin; every install makes its own.
+.claude-plugin/types/
+
+node_modules/
+.DS_Store

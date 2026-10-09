@@ -1,0 +1,28 @@
+{
+  "name": "hook-flow",
+  "version": "0.1.0",
+  "description": "A side pane that shows Claude Code's agent loop as it runs: every hook event, a flow chart of the loop, a span timeline of each turn, and the tokens and dollars spent",
+  "author": {
+    "name": "Legible",
+    "url": "https://legible.co"
+  },
+  "homepage": "https://github.com/legibleco/hook-flow",
+  "repository": "https://github.com/legibleco/hook-flow",
+  "license": "MIT",
+  "keywords": ["hooks", "visualization", "learning", "agent-loop", "mod"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "watchUi": {
+      "type": "boolean",
+      "title": "Count UI events",
+      "description": "Also count ui.* events (renders, presses, scrolls). Off, the screen's drawing never calls into this mod.",
+      "default": false
+    },
+    "costAlert": {
+      "type": "number",
+      "title": "Cost alert ($)",
+      "description": "Flash the odometer and toast when one turn costs at least this much",
+      "default": 0.5
+    }
+  }
+}
