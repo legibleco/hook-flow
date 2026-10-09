@@ -1,10 +1,20 @@
 # hook-flow
 
-Watch Claude Code's agent loop as it runs.
+A teaching tool for Claude Code's agent loop, built on Claude Code mods.
 
-hook-flow is a Claude Code plugin that opens a side pane and shows what happens between pressing Enter and getting an answer: each hook event as it fires, a flow chart of the loop lighting up box by box, a timeline of every span in the turn, and the tokens and dollars it cost. Click any step to read what it is and what a plugin could do there.
+![The hook-flow timeline: one turn laid out in time, with model requests, tool calls, permission checks and transcript writes as bars in their own rows](docs/timeline.png)
 
-It was built as a learning tool and as reference material for a post on [legible.co](https://legible.co). It only observes: it never changes what Claude Code does, and it adds nothing to the model's context.
+Mods are a new kind of Claude Code plugin: TypeScript that hooks the events Claude Code raises at every step of its loop, and can draw its own panes in the terminal. hook-flow demonstrates what that technology can do as of October 2026, on Claude Code 2.1.294–2.1.296. The mod API is new and may change, so treat this as a snapshot of that moment rather than a maintained product.
+
+It's meant for learning. It opens a side pane that shows what happens between pressing Enter and getting an answer:
+- each hook event as it fires
+- a flow chart of the loop, lighting up box by box
+- a timeline of every span in the turn
+- the tokens and dollars the turn cost
+
+Click any step to read what it is and what a mod could do there. The code is kept small and commented so you can read how each piece is built.
+
+hook-flow only observes. It never changes what Claude Code does, and it adds nothing to the model's context. It was written as reference material for a post on [legible.co](https://legible.co).
 
 ## Install
 
